@@ -1,0 +1,24 @@
+<html>  
+<head>  
+<script>
+function infunc()
+{
+  document.getElementById("inid").innerHTML = "Inside Hello World!!!";
+}
+</script>
+<script type="text/javascript" src="map.js"></script>   
+</head>  
+<body>  
+<script type="text/javascript">
+   window.onload = function() {
+     alert("loaded");
+   }
+</script>
+<p id="inid">Inside Text</p>  
+<p id="outid">Outside Text</p>  
+<form>  
+<input type="button" value="inline" onclick="infunc()"/>  
+<input type="button" value="external" onclick="outfunc()"/>  
+</form>  
+</body>  
+</html>  
